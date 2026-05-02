@@ -55,11 +55,5 @@ seed material for bugfix evaluation work.
 
 ## Caveats
 
-- Issue→PR linking is heuristic (regex on PR title/body); a PR that
-  doesn't mention `GH-<n>` or `Closes #<n>` will be missed.
 - "Regular committer" is defined heuristically from the cache; the
   threshold is tunable at the top of the script.
-- Not every row is a strict user-facing bug — Apache Arrow's R triage
-  applies the `Type: bug` label fairly broadly, so a few rows in the
-  CSV are documentation/style/refactor work that happened to carry the
-  label. Those rows are kept intentionally.
